@@ -1,0 +1,22 @@
+import { GoogleGenerativeAI } from "@google/generative-ai";
+
+async function runChat(prompt) {
+    try {
+        const res = await fetch("http://localhost:5000/api/gemini", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ prompt }),
+        });
+
+        const data = await res.json();
+
+        console.log("Gemini Response ->", data.text);
+        return data.text;
+    } 
+    catch (err) {
+        console.error("Error calling backend:", err);
+        return "Something went wrong.";
+    }
+}
+
+export default runChat;
