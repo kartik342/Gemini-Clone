@@ -5,7 +5,7 @@ A modern AI chat interface inspired by Google Gemini, built with a React fronten
 
 ## **🚀 Features**
 
-###🧠 AI-Powered Responses
+### 🧠 AI-Powered Responses
 
 • Connects to Google Generative AI (Gemini API)
 • Supports real-time text responses
