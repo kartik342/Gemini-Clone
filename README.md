@@ -1,36 +1,36 @@
 
-**🌌 Gemini Clone – AI Chat Application**
+# **🌌 Gemini Clone – AI Chat Application**
 
 A modern AI chat interface inspired by Google Gemini, built with a React frontend and a Node.js backend using Google Generative AI.
 
-**🚀 Features**
+## **🚀 Features**
 
-🧠 AI-Powered Responses
+###🧠 AI-Powered Responses
 
 • Connects to Google Generative AI (Gemini API)
 • Supports real-time text responses
 
-🎨 Modern UI (Client)
+### 🎨 Modern UI (Client)
 
 • Clean and responsive interface
 • Smooth chat experience
 • Gemini-style layout and animations
 • Built using React 
 
-⚙️ Backend API (Server)
+### ⚙️ Backend API (Server)
 
 • Secure API endpoint to handle Gemini requests
 • API key securely stored using environment variables
 • Built using Node.js + Express
 
-🔐 Security
+### 🔐 Security
 
 • .env for private API keys
 • Sensitive keys NOT stored on GitHub
 • Safe request proxying through backend
 
-**🏗️ Project Structure**
-
+## **🏗️ Project Structure**
+```
 Gemini-Clone/
 │
 ├── Client/       # Frontend React app
@@ -45,16 +45,17 @@ Gemini-Clone/
 │   └── package.json
 │
 └── README.md
+```
 
-🖥️ Installation & Setup
+## 🖥️ Installation & Setup
 
-1️⃣ Clone the Repository
+### 1️⃣ Clone the Repository
 ```
 git clone https://github.com/your-username/gemini-clone.git
 cd gemini-clone
 ```
 
-2️⃣ Setup the Server
+### 2️⃣ Setup the Server
 ```
 cd Server
 npm install
@@ -71,26 +72,26 @@ Start the backend:
 npm start
 ```
 
-3️⃣ Setup the Client
+### 3️⃣ Setup the Client
 ```
 cd ../Client
 npm install
 npm start
 ```
 
-🧩 Tech Stack
-Frontend (Client)
+## 🧩 Tech Stack
+### Frontend (Client)
 
 • React.js
 • CSS
 
-Backend (Server)
+### Backend (Server)
 
 • Node.js
 • Express.js
 • Google Generative AI SDK
 
-Server
+## Server
 
 Host your server on:
 
@@ -99,7 +100,7 @@ Host your server on:
 • AWS / DigitalOcean
 
 
-✨ Future Enhancements
+## ✨ Future Enhancements
 
 • Add conversation history
 • Add image input support
