@@ -125,7 +125,13 @@ const ContextProvider = (props) =>{
             response = await runChat(input)
         }
         
-        let newResponseArray = response.split(" ")
+        if (!response || typeof response !== "string") {
+            console.error("Backend returned invalid response:", response);
+            setLoading(false);
+            return;
+        }
+        
+        let newResponseArray = response.split(" ");
 
         // Save this conversation
         setChatHistory(prev => [
